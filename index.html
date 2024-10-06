@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>JackLouisPT - Fitness Programs</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles-global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        /* Carousel */
+        .carousel-inner .item {
+            height: 600px; /* Adjust the height as desired */
+        }
+
+        .carousel-inner img {
+            display: flex;
+            justify-content: center;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            left: 60%; /* Adjust the value to position the text horizontally */
+            top: 50%; /* Center the text vertically */
+            transform: translate(-50%, -50%);
+            text-align: left;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            width: 35%;
+        }
+
+
+
+        .carousel-caption ul {
+            font-size: 13pt;
+        }
+
+        h3 {
+            font-style: italic;
+        }
+
+        .carousel-inner .item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+        }
+
+        .carousel-inner .item img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel-caption h1 {
+            font-family: 'Impact';
+            font-size: 48pt;
+        }
+
+        #plan-image-desktop img{
+            height: 200px;
+        }
+
+        #reviewer {
+            float: left;
+            text-align: center;
+            font-family: avenir;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+
+        #reviewer img {
+            height: 200px;
+            padding: 20px;
+        }
+
+
+        #review p {
+            font-size: 40px;
+            font-style: italic;
+            font-family: "Avenir Next Condensed"
+
+        }
+
+
+
+
+
+        /* Media queries for smaller viewports */
+        @media (max-width: 1500px) {
+
+            .logo img {
+                height: 60px;
+            }
+
+            .carousel-caption h1 {
+                font-size: 36pt; /* Adjust the font size for smaller viewports */
+            }
+
+            .welcome-message {
+                font-size: 12pt;
+            }
+
+            #plans .two-column {
+              min-height: 600px;
+            }
+        }
+
+        /* Media queries for smaller viewports */
+        @media (max-width: 1024px) {
+            .logo img {
+                height: 40px;
+            }
+
+            .carousel-caption {
+                width: 60%; /* Adjust the width for smaller viewports */
+                top: 40%
+            }
+
+            .carousel-caption h1 {
+                font-size: 33pt; /* Adjust the font size for smaller viewports */
+            }
+
+            .carousel-inner .item {
+                height: 500px; /* Adjust the height as desired */
+            }
+
+            .welcome-message {
+                font-size: 10pt;
+            }
+
+            #plan-image-desktop img{
+                display: none;
+            }
+
+            #plans .two-column {
+              min-height: 600px;
+            }
+
+            #review p {
+                font-size: 33px;
+                font-style: italic;
+                font-family: "Avenir Next Condensed"
+            }
+
+
+        }
+
+
+        @media (min-width: 490px) {
+            .mobile-intro-img {
+                display: none;
+            }
+        }
+
+        @media (max-width: 489px) {
+            .logo img {
+                height: 25px;
+            }
+
+            .carousel-caption {
+                width: 80%; /* Adjust the width for even smaller viewports */
+
+            }
+
+            .carousel-caption h1 {
+                font-size: 18pt; /* Adjust the font size for even smaller viewports */
+            }
+
+            .carousel-caption h3 {
+                font-size: 10pt; /* Adjust the font size for even smaller viewports */
+            }
+
+            .carousel-caption ul {
+                font-size: 8pt;
+            }
+
+            .carousel-caption a {
+                font-size: 10pt;
+            }
+
+            .carousel-inner .item {
+                height: 500px; /* Adjust the height as desired */
+            }
+
+
+            #intro-images {
+                display: none;
+            }
+            #plan-image-desktop {
+                display: none;
+            }
+
+            #plans .two-column {
+              min-height: 600px;
+            }
+
+            #reviewer {
+                width: 100%;
+                text-align: center;
+                font-family: avenir;
+                font-weight: bold;
+            }
+
+            #reviewer img {
+                height: 100px;
+                padding: 20px;
+            }
+
+            #review p {
+                font-size: 20px;
+                font-style: italic;
+                font-family: "Avenir Next Condensed"
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top bar -->
+    <div class="top-bar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="JackLouisPT Logo">
+            </a>
+        </div>
+        <div class="user-menu">
+            <span class="welcome-message">Welcome Guest, please</span>
+            <a href="login.html" class="login-header">login</a>
+            <span class="welcome-message">or</span>
+            <a href="register.html" class="register-header">register</a>
+            <span class="shopping-cart">
+                <!-- Insert shopping cart icon here -->
+            </span>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <img src="images/index/carousel1.jpg" alt="Fat Loss Program" style="width:100%; vertical-align: middle;">
+              <div class="carousel-caption">
+                <h1>Fat Loss Program</h1>
+                <h3>Rewrite Your Story: Unleash the New, Fitter You!</h3>
+                <ul><li>Meal Plans</li> <li>Exercise Explanation Videos</li><li>Exercise Logging</li><li>Accessible Demonstrations</li><li>Progress Tracking</li></ul>
+                <a href="">Add to cart ></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="images/index/carousel2.jpg" alt="Muscle Gain Program" style="width:100%;">
+              <div class="carousel-caption">
+                <h1>Muscle Gain Program</h1>
+                <h3>Unleash Your Inner Beast: Unlock Maximum Strength and Size!</h3>
+                <ul><li>Meal Plans</li> <li>Exercise Explanation Videos</li><li>Exercise Logging</li><li>Accessible Demonstrations</li><li>Progress Tracking</li></ul>
+                <a href="">Add to cart ></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="images/index/carousel3.jpg" alt="Third carousel" style="width:100%;">
+              <div class="carousel-caption">
+                <h1>Third carousel</h1>
+                <h3>Something else can go here</h3>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+    <!-- Introduction section -->
+    <div class="section">
+        <div id="intro-images">
+        <div class="two-column">
+
+            <div class="two-column">
+                <img src="images/index/image1.jpg" alt="Image 1" style="height: fix; width:80%; object-fit: cover; padding: 10px;">
+            </div>
+
+            <div class="two-column">
+                <img src="images/index/image2.jpg" alt="Image 2" style="height: fix; width:80%; object-fit: contain; padding: 10px;">
+            </div>
+
+
+        </div>
+        </div>
+
+        <div class="two-column">
+            <div class="text">
+                <h2>Join us today and unlock your full potential!</h2>
+                <p>___</p>
+                <p>Welcome to jacklouispt - your ultimate destination for fitness programs designed to help you achieve your goals. Founded by fitness enthusiasts Jack and Louis, our brand is dedicated to empowering individuals on their fitness journeys. Whether you're looking to shed those extra pounds or build lean muscle mass, we've got you covered. </p>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="mobile-intro-img">
+    <div class="section">
+        <img src="images/index/image1.jpg" style="width: 100%;">
+    </div>
+    </div>
+
+    <div id="plans">
+    <div class="section">
+        <div class="two-column" style="background-color: lightgrey; padding: 5px; margin-right: 10px;">
+          <div class="text">
+            <h2>Muscle Growth Program</h2>
+            <h3>Lifetime Access for £99</h3>
+            <p>___</p>
+            <p>Are you tired of spending countless hours at the gym without seeing the results you desire? Look no further! Introducing our revolutionary muscle growth program designed to transform your physique and take your fitness journey to the next level.
+
+<br> <br>Our program is meticulously crafted by industry experts and backed by scientific research, ensuring that every workout and nutrition plan is tailored to maximize your muscle growth potential. Whether you're a beginner or an experienced fitness enthusiast, our program is adaptable to suit your individual needs and goals.</p>
+<a href="">Add to cart ></a>
+</div>
+            <div id="plan-image-desktop">
+              <img src="images/index/muscle-growth.jpg" style="float: right;">
+            </div>
+        </div>
+
+        <div class="two-column" style="background-color: lightgrey; padding: 5px; margin-bottom: 30px;">
+          <div class="text">
+            <h2>Fat Loss Program</h2>
+            <h3>Lifetime Access for £99</h3>
+            <p>___</p>
+            <p>Welcome to our transformative fat loss program designed to help you achieve the body you've always dreamed of.
+
+Our program is not just another fad diet or quick fix. It's a comprehensive and sustainable approach to fat loss, backed by science and tailored to fit your individual needs. Whether you're a beginner or have been on a weight loss journey before, our program is here to support you every step of the way.</p>
+<a href="">Add to cart ></a>
+
+
+</div>
+
+<div id="plan-image-desktop">
+  <img src="images/index/fat-loss.jpg" style="float: right;">
+</div>
+    </div>
+    </div>
+
+
+
+
+    <!-- Rest of the website content -->
+    <div class="section">
+
+        <div class="two-column">
+            <div class="text">
+                <h2>Jack's Story</h2>
+                <p>___</p>
+                <p>Jack, a resilient soul, embarked on a quest for self-discovery. Battling his fears, he carved a path to success. Through perseverance, he transformed from a hesitant dreamer into a fearless achiever. Jack's journey taught him that within every challenge lies the seed of opportunity, waiting to be nurtured. </p>
+
+            </div>
+        </div>
+
+
+
+
+        <div id="intro-images">
+        <div class="two-column">
+          <div class="two-column">
+              <img src="images/index/jack1.jpg" alt="Image 1" style="height: fix; width:80%; object-fit: cover; padding: 15px;">
+          </div>
+
+
+
+          <div class="two-column">
+              <img src="images/index/jack2.jpg" alt="Image 2" style="height: fix; width:80%; object-fit: cover; padding: 15px;">
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="mobile-intro-img">
+      <div class="section">
+          <img src="images/index/jack1.jpg" style="width: 100%; padding: none">
+      </div>
+      </div>
+
+      <div class="section">
+
+          <div class="two-column">
+              <div class="text">
+                  <h2>Louis' Story</h2>
+                  <p>___</p>
+                  <p>Louis, a curious mind, yearned for knowledge beyond the ordinary. Embracing the unfamiliar, he embarked on a quest for enlightenment. Through the depths of exploration, he unearthed hidden truths, unveiling the beauty of the world. Louis became a beacon of wisdom, inspiring others to embrace the infinite wonders that lie beyond their comfort zones. </p>
+
+              </div>
+          </div>
+
+
+          <div id="intro-images">
+          <div class="two-column">
+
+            <div class="two-column">
+                <img src="images/index/louis1.jpg" alt="Image 1" style="height: fix; width:80%; object-fit: cover; padding: 15px;">
+            </div>
+
+            <div class="two-column">
+                <img src="images/index/louis2.jpg" alt="Image 2" style="height: fix; width:80%; object-fit: cover; padding: 15px;">
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="mobile-intro-img">
+        <div class="section">
+            <img src="images/index/louis1.jpg" style="width: 100%;">
+        </div>
+        </div>
+
+
+        <div class="section" style="max-width: 80%; margin: 0 auto; padding: 20px; border-radius: 5px;">
+          <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Want to make an enquiry?</h2>
+          <form action="#" method="post">
+            <label for="email" style="display: block; margin-bottom: 5px; color: #555; font-weight: bold;">Email:</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 10px; font-size: 14px;">
+
+            <label for="name" style="display: block; margin-bottom: 5px; color: #555; font-weight: bold;">Name:</label>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 10px; font-size: 14px;">
+
+            <label for="subject" style="display: block; margin-bottom: 5px; color: #555; font-weight: bold;">Subject:</label>
+            <input type="text" id="subject" name="subject" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 10px; font-size: 14px;">
+
+            <label for="message" style="display: block; margin-bottom: 5px; color: #555; font-weight: bold;">Message:</label>
+            <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 10px; font-size: 14px;"></textarea>
+
+            <input type="submit" value="Submit" style="background-color: #4CAF50; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+          </form>
+        </div>
+
+        <footer>
+          <div class="footer">
+            <div class="footer-text">
+              <h3>jacklouispt</h3>
+              <br>
+              <a href="">Terms of Service</a> <a href="">Privacy Policy</a> <a href="">Reset Password</a>
+              <p>___</p>
+              <p>Unlock Your Potential, Embrace Your Fitness Journey</p>
+              <br>
+              <p>jacklouispt sets a new standard in the fitness industry, offering unparalleled expertise that guide individuals on a transformative journey towards optimal fitness, well-being, and self-empowerment.</p>
+              <br>
+              <h4>Connect with Jack</h4>
+              <a href=""><img src="images/social/016-tiktok.png"></a>
+              <a href=""><img src="images/social/011-instagram.png"></a>
+              <a href=""><img src="images/social/010-linkedin.png"></a>
+              <h4>Connect with Louis</h4>
+              <a href=""><img src="images/social/016-tiktok.png"></a>
+              <a href=""><img src="images/social/011-instagram.png"></a>
+              <a href=""><img src="images/social/010-linkedin.png"></a>
+              <br><br>
+              <p>JackLouisPT © 2023. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Carousel functionality
+
+
+        const carouselContainer = document.querySelector('.carousel-container');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        const carouselIndicators = document.querySelectorAll('.carousel-indicators .indicator');
+
+        let currentItem = 0;
+        let isAnimating = false;
+
+        // Function to show a particular carousel item
+        const showItem = (index) => {
+            if (isAnimating) return;
+
+            isAnimating = true;
+
+            carouselItems.forEach((item) => {
+                item.classList.remove('active');
+                item.style.opacity = '0';
+            });
+
+            carouselIndicators.forEach((indicator) => {
+                indicator.classList.remove('active');
+            });
+
+            carouselItems[index].classList.add('active');
+            carouselIndicators[index].classList.add('active');
+
+            setTimeout(() => {
+                carouselItems[index].style.opacity = '1';
+                isAnimating = false;
+            }, 100);
+        };
+
+        // Function to move to the next carousel item
+        const nextItem = () => {
+            if (isAnimating) return;
+
+            currentItem = (currentItem + 1) % carouselItems.length;
+            carouselContainer.style.transform = `translateX(-${currentItem * 33.33}%)`;
+            showItem(currentItem);
+        };
+
+        // Function to move to the previous carousel item
+        const prevItem = () => {
+            if (isAnimating) return;
+
+            currentItem = (currentItem - 1 + carouselItems.length) % carouselItems.length;
+            carouselContainer.style.transform = `translateX(-${currentItem * 33.33}%)`;
+            showItem(currentItem);
+        };
+
+        // Click event listener for carousel indicators
+        carouselIndicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                if (index === currentItem) return;
+
+                currentItem = index;
+                carouselContainer.style.transform = `translateX(-${currentItem * 33.33}%)`;
+                showItem(currentItem);
+            });
+        });
+
+        // Auto-scroll the carousel every 5 seconds
+        setInterval(nextItem, 5000);
+    </script>
+</body>
+</html>

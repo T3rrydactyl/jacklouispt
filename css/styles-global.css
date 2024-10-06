@@ -1,0 +1,487 @@
+.exercise-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .exercise-table th,
+        .exercise-table td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        .exercise-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        .exercise-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .exercise-table tr:hover {
+            background-color: #e0e0e0;
+        }
+
+h3 {
+    font-style: italic;
+}
+
+li {
+    font-family: Avenir, sans-serif;
+}
+
+.story h1 {
+  text-align: left;
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
+}
+
+.story h2 {
+  font-size: 21px;
+  font-family: Avenir, sans-serif;
+  font-weight: bold;
+}
+
+.story img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.story .caption p {
+  font-family: avenir;
+  color: gray;
+}
+
+.link-icons {
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+.link-icons a {
+	text-decoration: none;
+	color: #394352;
+	padding: 0 10px;
+}
+.link-icons a:hover {
+	color: #4e5c70;
+}
+.link-icons a i {
+	font-size: 18px;
+}
+.link-icons a span {
+	display: inline-block;
+	text-align: center;
+	background-color: #63748e;
+	border-radius: 50%;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+	font-weight: bold;
+	position: absolute;
+	top: 22px;
+	right: 0;
+}
+
+.two-column {
+    float: left;
+    width: 48%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 300pt;
+    padding: 1%
+  }
+
+  a {
+      font-size: 12pt;
+      color: #DC0100;
+      font-family: Avenir;
+      font-weight: 500;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      background: none;
+      border: none;
+  }
+
+.text {
+    top: 50%;
+    font-family: avenir;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.section {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 100%;
+    margin: 100px auto;
+    justify-content: center;
+}
+
+h2 {
+    font-family: Impact, Avenir, 'Arial Black', 'Roboto Condensed', Verdana, Arial;
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12pt;
+    font-family: Avenir;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu, .user-menu a {
+    font-size: 12pt;
+}
+
+.footer {
+  background-color: #282C34;
+  min-height: 200px;
+  padding: 10px;
+  color: white;
+  font-family: Avenir;
+}
+
+.footer img, .login-register img {
+  width: 30px;
+}
+
+.footer-text h4 {
+  font-weight:bold;
+  color: white;
+  font-family: Avenir;
+}
+
+.logged-in-menu a {
+  margin: 0 5px;
+}
+
+.footer a{
+  margin: 0 5px;
+  color: grey;
+}
+
+.footer-text {
+  max-width: 50%;
+}
+
+/* Top bar */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.logo img {
+    height: 80px;
+    /* Adjust the height as needed */
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.welcome-message {
+    font-weight: bold;
+}
+
+.login-header,
+.register-header {
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.shopping-cart {
+    margin-left: 10px;
+    /* Add styling for the shopping cart icon */
+}
+
+.shopping-cart img {
+    width: 30px;
+}
+
+.login-register {
+  	width: 400px;
+  	background-color: #F1F1F1;
+  	margin: 100px auto;
+}
+
+.login-register p {
+    margin: 10px;
+}
+
+.login-register form {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	padding-top: 20px;
+}
+
+.login-register form label {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50px;
+  	height: 50px;
+  	background-color: #E10101;
+  	color: #ffffff;
+}
+
+.login-register form input[type="password"], .login-register form input[type="text"], .login-register form input[type="email"] {
+  	width: 310px;
+  	height: 50px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 20px;
+  	padding: 0 15px;
+}
+.login-register form input[type="submit"] {
+  	width: 100%;
+  	padding: 15px;
+ 	  margin-top: 20px;
+  	background-color: #E10101;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+.login-register form input[type="submit"]:hover {
+	background-color: #7B0000;
+  	transition: background-color 0.2s;
+}
+
+.banner {
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.banner a {
+   color: #f68484;
+}
+
+
+
+.banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px; /* Adjust the value to control the amount of rounding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1; /* Ensure the overlay is placed above the image and other content */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.page-heading {
+  text-align: center;
+  font-family: avenir;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.page-heading h1 {
+  font-size: 55px;
+  font-family: Impact, Avenir, 'Arial Black', 'Roboto Condensed', Verdana, Arial;
+  font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #E10101;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    font-family: avenir;
+    font-size: 14pt;
+}
+
+.btn-primary:hover {
+    background-color: #7B0000;
+    color: white;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+@media (max-width: 1500px) {
+  .logo img {
+      height: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo img {
+      height: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner {
+      width: 97%;
+  }
+
+
+}
+
+
+
+
+@media (max-width: 650px) {
+    .two-column {
+        width: 100%;
+        min-height: 200pt;
+    }
+
+    .footer-text {
+      max-width: 100%;
+    }
+
+    .login-register {
+      	width: 350px;
+      	background-color: #F1F1F1;
+        height: 450px;
+    }
+
+    .login-register form {
+      	display: flex;
+      	flex-wrap: wrap;
+      	justify-content: center;
+      	padding-top: 5px;
+    }
+
+    .login-register form input[type="submit"] {
+      	width: 90%;
+      	padding: 15px;
+    }
+
+    .login-register form input[type="password"], .login-register form input[type="text"], .login-register form input[type="email"] {
+      	width: 280px;
+      	height: 50px;
+      	border: 1px solid #dee0e4;
+      	margin-bottom: 20px;
+      	padding: 0 15px;
+    }
+
+    .banner {
+        max-width: 93%;
+    }
+
+    h2 {
+      font-size: 33px;
+    }
+
+    .page-heading h1 {
+      font-size: 38px;
+    }
+
+    .wrapper {
+      margin: 10px auto;
+    }
+
+    .user-menu a, .user-menu {
+      font-size: 8pt;
+    }
+
+    .shopping-cart {
+        margin-left: 0px;
+    }
+
+    .shopping-cart img {
+        width: 25px;
+    }
+
+    .link-icons a span {
+        display: inline-block;
+        text-align: center;
+        background-color: #63748e;
+        border-radius: 50%;
+        color: #FFFFFF;
+        font-size: 8px; /* Updated font size to 8px */
+        line-height: 9px; /* Updated line height to 10px */
+        width: 9px; /* Updated circle width to 10px */
+        height: 9px; /* Updated circle height to 10px */
+        font-weight: bold;
+        position: absolute;
+        top: 22px;
+        right: 0;
+    }
+
+    .link-icons a {
+        text-decoration: none;
+        color: #394352;
+        padding: 0 5px;
+      }
+    }
+
+@media (max-width: 480px) {
+  .logo img {
+      height: 25px;
+  }
+
+  .centered {
+    width: 65%;
+  }
+
+  .section {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+}
+
+@media (min-width: 950px) {
+
+    .banner, .box {
+        max-width: 55%;
+        margin: 0 auto;
+    }
+
+    .two-column .banner {
+        max-width: 100%;
+    }
+
+}
