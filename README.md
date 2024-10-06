@@ -6,6 +6,9 @@ Welcome to the repository for jacklouispt, a comprehensive digital platform for 
 
 jacklouispt aimed to provide personalised fitness and nutritional programmes tailored for a diverse user base seeking transformative results. The venture was concluded in 2024. The dissolution was due to strategic realignments, with the founders pursuing different career paths and the need for me to transition into a full-time role which affected my continued participation.
 
+[Watch the Launch Trailer](https://youtu.be/kOp7Jo2p0lg)
+
+
 ## Features
 
 - Customised workout plans
@@ -33,8 +36,6 @@ jacklouispt aimed to provide personalised fitness and nutritional programmes tai
 
 ![Workout Log](https://github.com/T3rrydactyl/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.015.jpeg?raw=true)
 *Workout Log Form*
-
-[Watch the Project Trailer](https://youtu.be/kOp7Jo2p0lg)
 
 ## Entity Relationship Diagram
 
