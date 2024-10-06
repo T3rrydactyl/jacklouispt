@@ -19,27 +19,27 @@ jacklouispt aimed to provide personalised fitness and nutritional programmes tai
 
 ## Screenshots and Media
 
-![Homepage](https://github.com/T3rrydactyl/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.010.jpeg?raw=true)
+![Homepage](https://github.com/t3rryhuang/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.010.jpeg?raw=true)
 *Homepage*
 
-![Shopping Cart](https://github.com/T3rrydactyl/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.011.jpeg?raw=true)
+![Shopping Cart](https://github.com/t3rryhuang/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.011.jpeg?raw=true)
 *Shopping Cart*
 
-![User Dashboard](https://github.com/T3rrydactyl/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.013.jpeg?raw=true)
+![User Dashboard](https://github.com/t3rryhuang/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.013.jpeg?raw=true)
 *User Dashboard*
 
-![Workout Overview](https://github.com/T3rrydactyl/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.014.jpeg?raw=true)
+![Workout Overview](https://github.com/t3rryhuang/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.014.jpeg?raw=true)
 *Workout Overview*
 
-![Workout Overview Bottom Half](https://github.com/T3rrydactyl/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.016.jpeg?raw=true)
+![Workout Overview Bottom Half](https://github.com/t3rryhuang/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.016.jpeg?raw=true)
 *Workout Overview Bottom Half*
 
-![Workout Log](https://github.com/T3rrydactyl/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.015.jpeg?raw=true)
+![Workout Log](https://github.com/t3rryhuang/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.015.jpeg?raw=true)
 *Workout Log Form*
 
 ## Entity Relationship Diagram
 
-To understand the database structure, refer to the [Entity Relationship Diagram (ERD)](https://github.com/T3rrydactyl/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.003.jpeg?raw=true).
+To understand the database structure, refer to the [Entity Relationship Diagram (ERD)](https://github.com/t3rryhuang/jacklouispt/blob/main/Website%20Presentation/Presentation%20Image%20Export/Presentation.003.jpeg?raw=true).
 
 ## Installation
 
